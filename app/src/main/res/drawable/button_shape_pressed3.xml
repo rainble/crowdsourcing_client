@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <!-- rounded corner -->
+    <corners android:radius="5dp" />
+
+    <!-- fill with two colors, and the two colors change softly -->
+
+         <gradient
+        android:angle="270"
+        android:startColor="@color/button_pressed"
+        android:endColor="@color/button_nomal"
+        android:useLevel="true" />
+
+    <solid android:color="@color/button_pressed" />
+
+</shape>

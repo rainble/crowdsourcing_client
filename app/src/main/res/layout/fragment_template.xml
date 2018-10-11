@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lab.se.crowdframe.TemplateFragment">
+
+    <!--这是搜索框-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="125dp"
+        android:orientation="vertical"
+        tools:context="com.airsaid.searchviewdemo.MainActivity">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/template_prompt" />
+
+        <ListView
+            android:id="@+id/searchListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/template_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:divider="#00000000"
+                android:dividerHeight="0dip">
+            </ListView>
+            <TextView
+                android:id="@+id/noData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/noresult_prompt"
+                android:textSize="18dp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    <Button
+        android:id="@+id/add_temp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/add_temp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/refresh_2"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="top|right"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_notuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,294 @@
+<resources>
+    <!--Strings related to login page-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="user_name_not_exist">该用户名不存在！</string>
+    <string name="wrong_password">密码错误</string>
+    <string name="internal_server_error">内部服务器错误，请稍后再试！</string>
+    <string name="register_successfully">注册成功！</string>
+    <string name="user_name_exist">该用户名已存在，请重新更换！</string>
+
+    <string name="app_name">CrowdFrame</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="title_search">浏览</string>
+    <string name="title_publish">发布</string>
+    <string name="title_template">模板</string>
+    <string name="title_my_task">我的</string>
+    <string name="title_activity_search_task">搜索结果</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search">位置选择</string>
+    <string name="title_activity_edit_temp">编辑模板</string>
+    <string name="title_activity_edit_stage">编辑阶段</string>
+    <string name="title_activity_set_task">定制任务</string>
+    <string name="title_activity_login">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录或注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">无效邮箱地址</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">该必填项未填</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ongoing_accepted_task">我接受的正在进行中的任务</string>
+    <string name="title_activity_task_list">任务列表</string>
+    <string name="title_activity_search_temp">搜索结果</string>
+    <string name="title_activity_check_map">查看地图</string>
+    <string name="title_activity_customize_stage">定制阶段</string>
+    <string name="title_activity_accept_ongoing_task">AcceptOngoingTaskActivity</string>
+
+    <!--Strings related to mypage-->
+    <string name="user_name">用户：</string>
+    <string name="user_credit">积分：</string>
+    <string name="accepted_task">已接的任务</string>
+    <string name="accepted_ongoing">正在进行中</string>
+    <string name="accepted_history">历史任务</string>
+    <string name="published_task">发布的任务</string>
+    <string name="published_ongoing">正在进行中</string>
+    <string name="published_history">历史任务</string>
+    <string name="about">关于</string>
+    <string name="logout">退出</string>
+    <string name="change_password">修改密码</string>
+    <string name="change_tag">修改标签</string>
+    <string name="change_language">切换语言</string>
+
+    <string name="change_password_success">密码修改成功！</string>
+    <string name="change_password_failed">密码修改失败！</string>
+    <string name="change_password_no_need">不需要修改密码= =</string>
+    <string name="input_new_password">输入新密码</string>
+    <string name="input_new_password_again">再次输入新密码</string>
+
+    <string name="change_tag_success">标签修改成功！</string>
+    <string name="change_tag_failed">标签修改失败！</string>
+    <string name="change_tag_no_need">不需要修改标签= =</string>
+    <string name="other_user">非软工实验室</string>
+    <string name="software_user">软工实验室</string>
+
+    <string name="instruction">使用说明</string>
+    <string name="privacy_policy">隐私策略</string>
+    <string name="share_app">分享该应用</string>
+
+    <string name="abort_task">放弃任务</string>
+    <string name="abort_task_detail_1">如果放弃任务，您将失去</string>
+    <string name="abort_task_detail_2">积分作为处罚。确认放弃吗？</string>
+
+
+    <!--Strings related to template page-->
+    <string name="template_prompt">输入模板名字搜索</string>
+    <string name="noresult_prompt">无相关结果</string>
+    <string name="collect">收藏</string>
+    <string name="edit_template_title">标题：</string>
+    <string name="edit_template_desc">描述：</string>
+    <string name="add_stage">添加阶段</string>
+    <string name="edit_stage_hint">请输入该阶段的描述（必填）</string>
+    <string name="edit_stage_worker_strategy">用户策略</string>
+    <string name="worker_strategy_same">前一阶段任务参与者继续完成</string>
+    <string name="worker_strategy_new">与之前所有阶段的参与者相异</string>
+    <string name="worker_strategy_no">没有要求</string>
+    <string name="allow_multiple_worker">允许多个参与者</string>
+    <string name="edit_stage_worker_number">数量：</string>
+    <string name="edit_stage_result">结果选择：</string>
+    <string name="result_first">选择最先完成</string>
+    <string name="result_most">选择最多数答案</string>
+    <string name="result_select">任务发布者自己选择</string>
+    <string name="edit_stage_start_location">起点</string>
+    <string name="edit_stage_end_location">终点</string>
+    <string name="location_no_requirement">不需要</string>
+    <string name="location_request_location">任务发布者位置</string>
+    <string name="location_request_select">任务发布者选择</string>
+    <string name="add_input">添加额外信息</string>
+    <string name="add_input_hint">输入名称</string>
+    <string name="add">添加</string>
+    <string name="stage_feedback">任务反馈</string>
+    <string name="feedback_picture">图片</string>
+    <string name="picture_hint">输入图片描述</string>
+    <string name="feedback_message">信息</string>
+    <string name="output_label">反馈名称</string>
+    <string name="finish">完成</string>
+    <string name="confirm_edit_template">确定放弃此次对模板的编辑吗？</string>
+    <string name="confirm_yes">确定</string>
+    <string name="default_stage_desc">这是默认阶段。你可以设置该阶段具体内容，同时按需添加新的阶段</string>
+    <string name="new_stage_desc">这是新的阶段。你可以点击设置按钮来设置它的内容</string>
+    <string name="add_stage_successful">成功添加新的阶段1</string>
+    <string name="confirm_finish">确定已完成此次编辑？</string>
+    <string name="confirm_delete">确定删除该阶段？</string>
+    <string name="confirm_edit_stage">确定放弃此次编辑？</string>
+    <string name="confirm_stage_finish">确定已完成阶段编辑？</string>
+    <string name="confirm_delete_tag">确定删除该信息？</string>
+
+    <!--Strings related to publish page-->
+    <string name="select_type">选择模板</string>
+    <string name="publish_hint">(下拉刷新，长按删除)</string>
+    <string name="no_collected_temp">你还未收藏模板</string>
+    <string name="task_overview">任务总览</string>
+    <string name="task_title">任务标题：</string>
+    <string name="task_desc">任务描述：</string>
+    <string name="task_range">发布范围：</string>
+    <string name="task_bonus">额外奖励：</string>
+    <string name="task_ddl">截止时间：</string>
+    <string name="prompt_stages">阶段</string>
+    <string name="stage_input">输入</string>
+    <string name="stage_desc">描述：</string>
+    <string name="stage_reward">报酬：</string>
+    <string name="stage_end_location">终点位置(必填)：</string>
+    <string name="stage_detail_address">详细地址(选填)：</string>
+    <string name="end_duration">终点耗时(分钟)：</string>
+    <string name="stage_ddl">截止时间：</string>
+    <string name="stage_attribute">阶段属性</string>
+    <string name="stage_worker_strategy">选择策略：</string>
+    <string name="stage_worker_number">参与者数量：</string>
+    <string name="stage_result">任务结果聚合：</string>
+    <string name="stage_output">阶段输出：</string>
+
+    <!--Strings related to the user guide-->
+    <string name="first_title">首先</string>
+    <string name="first_content">这是模板页面。你要先收藏一个模板，然后利用收藏的模板才能发布任务。同样，你也可以点击‘加号’创建自己的模板然后收藏</string>
+    <string name="second_title">其次</string>
+    <string name="second_content">这是发布页面。首先点击列出来的模板标题，然后填写任务信息，最后发布任务。</string>
+    <string name="third_title">然后</string>
+    <string name="third_content">这是任务浏览页面。通过点击地图上的标记，你可以查看任务的详细信息。通过点击接受按钮，你也可以接任务。注意：你无法在地图上看到自己发布的任务</string>
+    <string name="last_title">最后</string>
+    <string name="last_content">这是你的个人页面。你可以查看自己已经接受的任务，然后完成任务。同时，你也可以看到自己发布的任务的进度。</string>
+
+    <!--Strings related to the search task page-->
+    <string name="accept_task">接受</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="guide_button">了解</string>
+    <string name="create_template_successfully">成功创建模板</string>
+    <string name="template_update">模板已更新</string>
+    <string name="template_release_time">模板创建时间</string>
+    <string name="number_of_stages">模板所包含阶段数量</string>
+    <string name="template_heat">模板热度</string>
+    <string name="confirm_collect_template">确定收藏该模板吗？</string>
+    <string name="collect_template_successfully">成功收藏模板，请浏览发布页面查看详情！</string>
+    <string name="collect_template_fail">收藏模板失败，请再次尝试！</string>
+    <string name="template_overview_desc">描述：</string>
+    <string name="template_overview_stage">阶段</string>
+    <string name="template_overview_stage_desc">阶段描述：</string>
+    <string name="template_overview_stage_worker_strategy">用户策略：</string>
+    <string name="template_overview_stage_multiworker">是否允许多个任务参与者：</string>
+    <string name="template_stage_allow_multiple_worker">允许</string>
+    <string name="template_stage_not_allow_multiple_worker">不允许</string>
+    <string name="template_overview_worker_number_limit">参与者数量限制：</string>
+    <string name="template_overview_stage_aggregate_method">聚合方法：</string>
+    <string name="start_location_strategy">起点选择策略：</string>
+    <string name="start_location_inputs">起点信息：</string>
+    <string name="start_picture_output">起点图片：</string>
+    <string name="start_other_output">起点其它输出：</string>
+    <string name="end_location_strategy">终点选择策略：</string>
+    <string name="end_location_inputs">终点信息：</string>
+    <string name="end_picture_output">终点图片：</string>
+    <string name="end_other_output">终点其它输出：</string>
+    <string name="confirm_delete_template">确定将该模板从收藏列表中删除吗？</string>
+    <string name="cancel_collection_successfully">取消成功，你可以在模板页面再次收藏！</string>
+    <string name="cancel_collection_fail">取消失败，请再次尝试!</string>
+    <string name="not_enough_credit">对不起，你没有足够积分！</string>
+    <string name="premature_ddl">设置的截止时间过早，请检查！</string>
+    <string name="wrong_stage_ddl">有阶段的截止时间设置错误，请检查！</string>
+    <string name="confirm_publish">确认发布该任务吗？</string>
+    <string name="stages_remain_unmodified">还有阶段信息未填写，请依次点击所有阶段右边的编辑图标设置相应内容！</string>
+    <string name="input_title">请输入任务标题！</string>
+    <string name="input_desc">请输入任务描述！</string>
+    <string name="publish_task_successfully">成功发布任务！</string>
+    <string name="publish_task_fail">发布失败，请稍后再次尝试！</string>
+    <string name="publish_task_fail_exception">因异常导致发布失败，请稍后再次尝试！</string>
+    <string name="publish_task_fail_post">就是单纯的发布失败，请稍后再次尝试！</string>
+
+    <string name="accept_successfully">成功申请该任务，稍后将会通过消息推送告知结果（30秒左右）！</string>
+    <string name="accept_fail">接任务失败！</string>
+    <string name="detail_worker_num">所需人数：</string>
+    <string name="contract">契约：</string>
+    <string name="detail_worker">参与者：</string>
+    <string name="detail_address">详细地址：</string>
+    <string name="feedback_text">#文本反馈：</string>
+    <string name="feedback_number">#数字反馈：</string>
+    <string name="feedback_enum">#选择一个选项：</string>
+    <string name="confirm_accept">确定接受该任务并在契约时间（点击可以进行修改，但不能晚于任务的截止时间）前完成它吗？</string>
+    <string name="need_to_fill_feedback">还有反馈未填写！</string>
+    <string name="deny_permission">你拒绝了授予相应权限！</string>
+    <string name="progress">进度：</string>
+    <string name="task_detail_desc">描述：</string>
+    <string name="contract_time">契约时间：</string>
+    <string name="feedback">反馈</string>
+    <string name="task_detail">详细信息</string>
+    <string name="select_location">选择位置</string>
+    <string name="confirm_button">确认</string>
+    <string name="current_stage">目前阶段：</string>
+    <string name="accept_ongoing_task_title">所属任务：</string>
+    <string name="accept_stage_reward">阶段报酬：</string>
+    <string name="check_in_map">查看地图</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_photo">选择</string>
+    <string name="abort">终止任务</string>
+    <string name="no_related_task">暂时没有相关任务！</string>
+    <string name="ongoing_task">正在进行的任务</string>
+    <string name="confirm_logout">确认退出当前应用吗？</string>
+    <string name="register_hint_string">还没有账号？注册一个</string>
+    <string name="login_hint_string">已有账号？登录</string>
+    <string name="re_enter_password">再次输入密码</string>
+    <string name="warn">提示</string>
+    <string name="warn_left_stage">模板包含的所有阶段必须点击设置相关信息，才可以发布模板。目前还有阶段信息未设置，请检查！</string>
+    <string name="remind_select_location">你需要选择一个位置！</string>
+    <string name="stage_status">状态：</string>
+    <string name="publish_time">发布时间：</string>
+    <string name="stage_desc_four">阶段描述：</string>
+    <string name="finish_time">完成时间：</string>
+    <string name="task_progress">任务进度：</string>
+    <string name="expired">过期</string>
+    <string name="finished">已完成，待确认</string>
+    <string name="credit_given">已领取积分奖励</string>
+    <string name="give_credit">发放奖励</string>
+    <string name="confirm_give_credit">确定发放奖励积分吗？</string>
+    <string name="give_credit_success">成功发放奖励积分！</string>
+    <string name="give_credit_error">发放奖励积分错误！</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="accept_task_successfully">成功接受任务：</string>
+    <string name="accept_task_fail">接任务失败：</string>
+    <string name="accept_task_successfully_desc1">你应该在</string>
+    <string name="accept_task_successfully_desc2">之前完成任务：</string>
+    <string name="published_task_completed">你发布的任务进度有更新！</string>
+    <string name="published_task_completed_desc1">你发布的任务：</string>
+    <string name="published_task_completed_desc2">由</string>
+    <string name="published_task_completed_desc3">于</string>
+    <string name="published_task_completed_desc4">完成！</string>
+    <string name="update">软件升级</string>
+    <string name="update_message">发现新版本,请立即更新使用.</string>
+    <string name="update_button">更新</string>
+    <string name="already_completed">已有人在你之前完成此任务！</string>
+
+    <string name="task_published">新任务</string>
+    <string name="task_published_desc1">用户：</string>
+    <string name="task_published_desc2">新发布了任务：</string>
+    <string name="task_published_desc3">，总奖励是：</string>
+    <string name="task_published_desc4">，任务截止时间是：</string>
+
+    <!--alert dialog-->
+    <string name="dialog_update">修改</string>
+    <string name="register_username_error">用户名至少应该包含1个字符！</string>
+    <string name="register_password_tooshort">密码太短，至少应该包含5个字符！</string>
+    <string name="register_password_notmatch">密码不匹配！</string>
+
+    <string name="requester_abort_task">确定终止该任务吗？</string>
+    <string name="cancel_task_success">任务取消成功！</string>
+    <string name="cannot_cancel_task">任务已有人接受，无法取消该任务！</string>
+    <string name="cancel_task_error">任务取消失败！</string>
+    <string name="requester_give_credit">已发放积分奖励</string>
+    <string name="task_detail_bonus">额外奖励：</string>
+    <string name="task_detail_totalReward">奖励总计：</string>
+    <string name="prompt_phone">手机号码</string>
+    <string name="register_phone_not_correct">手机号码格式错误！</string>
+
+    <string name="change_contract">修改契约时间</string>
+    <string name="wrong_contract">契约时间应早于任务截止时间！</string>
+    <string name="has_worker">已接受者：</string>
+    <string name="updateResult">更新结果</string>
+    <string name="update_fail">更新失败，请稍后再次尝试！</string>
+
+</resources>

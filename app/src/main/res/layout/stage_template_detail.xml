@@ -1,0 +1,304 @@
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--stage start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        <View
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary">
+        </View>
+        <TextView
+            android:id="@+id/stage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stage1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary">
+        </View>
+
+    </LinearLayout>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阶段描述："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goto the Akang and fetch teh delivery"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与者选择："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_worker_strategy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多个参与者："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_multi_worker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/worker_number_row"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人数限制："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/multi_worker_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结果聚合："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/result_aggregation_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <!--start location start-->
+    <LinearLayout
+        android:id="@+id/start_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_stage_start_location"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择策略："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/start_location_select_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/start_input_row"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="额外信息："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/start_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/start_feedback"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </TableLayout>
+    <!--start location end-->
+
+    <!--end location start-->
+    <LinearLayout
+        android:id="@+id/end_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_stage_end_location"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择策略："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/end_location_select_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/end_input_row"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="额外信息："
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/end_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/end_feedback"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </TableLayout>
+    <!--end location end-->
+
+    <!--stage end-->
+
+</TableLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_message_number_strategy" translatable="false">
+        <item>Max</item>
+        <item>Min</item>
+        <item>Average</item>
+        <item>Mode</item>
+    </string-array>
+
+    <string-array name="feedback_message_type" translatable="false">
+        <item>Number</item>
+        <item>Enum</item>
+        <item>Text</item>
+    </string-array>
+
+    <string-array name="user_scope_type" translatable="false">
+        <item>所有用户可见</item>
+        <item>仅软工实验室可见</item>
+    </string-array>
+</resources>

@@ -1,0 +1,380 @@
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--stage start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        <View
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary">
+        </View>
+        <TextView
+            android:id="@+id/stage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stage1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/stage_status_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            />
+        <View
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary">
+        </View>
+
+    </LinearLayout>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_template_desc"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goto the Akang and fetch teh delivery"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stage_reward"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/stage_worker_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_worker"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_worker_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow android:id="@+id/has_worker_row" android:visibility="gone">
+        <TextView
+            android:id="@+id/stage_has_worker_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/has_worker"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_has_worker_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/stage_time_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/stage_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-03-21 18:00"/>
+    </TableRow>
+
+    <!--start location start-->
+    <LinearLayout
+        android:id="@+id/start_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_stage_start_location"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/start_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start location address"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/start_extra_information"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:shrinkColumns="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_location_inputs"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/start_feedback"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/start_feedback_pic_desc"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/start_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+
+    </TableLayout>
+    <!--start location end-->
+
+    <!--end location start-->
+    <LinearLayout
+        android:id="@+id/end_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_stage_end_location"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/end_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="end location address"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/end_extra_information"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:shrinkColumns="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_location_inputs"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/end_feedback"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback"
+                android:textColor="@color/text_clo"
+                android:textSize="16dp" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_clo">
+            </View>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/end_feedback_pic_desc"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/end_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+
+        <com.lab.se.crowdframe.entity.MyGridView
+            android:id="@+id/end_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+        </com.lab.se.crowdframe.entity.MyGridView>
+
+
+    </TableLayout>
+    <!--end location end-->
+
+    <!--stage end-->
+
+</TableLayout>

@@ -1,0 +1,96 @@
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/task_detail_ll"
+        style="@style/single_layout2"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_clo"
+            android:layout_marginBottom="10dp"
+            android:text="Please fetch the delivery for me from Akang to Software Building."/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_detail_desc"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fetch the delivery."/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/progress"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/3"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_detail_bonus"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_detail_bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_detail_totalReward"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_detail_totalReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stage_ddl"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_ddl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-03-21 10:00"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+

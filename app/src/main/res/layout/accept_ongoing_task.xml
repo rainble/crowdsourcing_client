@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/clickableLinear"
+                style="@style/single_layout2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/stage_desc"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Fetch the delivery."/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="1">
+                    <TextView
+                        android:id="@+id/hidden_task_id"
+                        android:visibility="gone"/>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/accept_ongoing_task_title"
+                            android:layout_marginRight="10dp"/>
+                        <TextView
+                            android:id="@+id/task_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please fetch the delivery for me from Akang to Software Building."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_stage"
+                            android:layout_marginRight="10dp"/>
+                        <TextView
+                            android:id="@+id/current_stage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1/3"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contract_time"
+                            android:layout_marginRight="10dp"/>
+                        <TextView
+                            android:id="@+id/contract_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-03-21 18:00"/>
+                    </TableRow>
+
+
+                  </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+

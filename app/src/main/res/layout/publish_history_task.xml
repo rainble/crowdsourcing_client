@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/clickableLinear"
+        style="@style/single_layout2"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_clo"
+            android:layout_marginBottom="10dp"
+            android:text="Please fetch the delivery for me from Akang to Software Building."/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stage_desc"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fetch the delivery."/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stage_status"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/task_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finished"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/give_credit"
+            android:visibility="gone"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/give_credit"
+            android:textSize="16dp"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

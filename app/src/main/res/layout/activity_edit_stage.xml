@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lab.se.crowdframe.EditStageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/stageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text=""/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/stage_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stage_zone"
+                    android:hint="@string/edit_stage_hint"
+                    android:inputType="textMultiLine"
+                    android:padding="15dp"
+                    android:textSize="16dp" />
+
+                <!--worker stragy start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/stage_zone"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_stage_worker_strategy"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/select_worker_strategy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/same_worker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/worker_strategy_same"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/new_worker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/worker_strategy_new"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/no_strategy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/worker_strategy_no"
+                            android:textSize="16dp" />
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"></View>
+
+                    <!--worker number & result selection stragy start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/worker_num_checkbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/allow_multiple_worker" />
+
+                        <LinearLayout
+                            android:id="@+id/multi_worker_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/edit_stage_worker_number" />
+
+                                <ImageButton
+                                    android:id="@+id/worker_num_minus"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/worker_minus" />
+
+                                <EditText
+                                    android:id="@+id/worker_num_text"
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/worker_number_edit_text"
+                                    android:inputType="number"
+                                    android:text="2"
+                                    android:textAlignment="center" />
+
+                                <ImageButton
+                                    android:id="@+id/worker_num_plus"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/worker_plus" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/edit_stage_result" />
+
+                                <Spinner
+                                    android:id="@+id/result_aggregation_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--worker number & result selection stragy end-->
+
+                </LinearLayout>
+                <!--worker stragy end-->
+
+                <!--location stragy start-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/stage_zone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/stage_select_location_module_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <RadioGroup
+                                android:id="@+id/location_strategy_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <RadioButton
+                                    android:id="@+id/end_location_no_requirement_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="@string/location_no_requirement"
+                                    android:textSize="16dp" />
+
+                                <RadioButton
+                                    android:id="@+id/requester_location_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/location_request_location"
+                                    android:textSize="16dp" />
+
+                                <RadioButton
+                                    android:id="@+id/other_location_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/location_request_select"
+                                    android:textSize="16dp" />
+                            </RadioGroup>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dash_line"
+                                android:layerType="software"></View>
+
+                            <!--add input start-->
+                            <CheckBox
+                                android:id="@+id/need_label_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_input" />
+                            <LinearLayout
+                                android:id="@+id/need_label_ll_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/add_input_label_text_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="6"
+                                        android:hint="@string/add_input_hint"
+                                        android:textSize="16dp" />
+
+                                    <Button
+                                        android:id="@+id/add_input_label_button_1"
+                                        style="@style/ButtonStyle"
+                                        android:layout_width="50dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="@string/add"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                                <com.lab.se.crowdframe.entity.TagCloudLayout
+                                    android:id="@+id/add_input_label_show_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></com.lab.se.crowdframe.entity.TagCloudLayout>
+
+                            </LinearLayout>
+                            <!--add input end-->
+
+                            <!--feedback start-->
+                            <CheckBox
+                                android:id="@+id/need_feedback_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stage_feedback" />
+                            <LinearLayout
+                                android:id="@+id/feedback_ll_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="30dp"
+                                android:visibility="gone">
+
+                                <CheckBox
+                                    android:id="@+id/feedback_pic_checkbox__1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/feedback_picture" />
+
+                                <EditText
+                                    android:id="@+id/feedback_pic_desc_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16dp"
+                                    android:inputType="textMultiLine"
+                                    android:background="@drawable/stage_zone"
+                                    android:padding="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:visibility="gone"
+                                    android:hint="@string/picture_hint" />
+
+                                <CheckBox
+                                    android:id="@+id/feedback_message_checkbox_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/feedback_message" />
+
+                                <LinearLayout
+                                    android:id="@+id/feedback_message_area_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/feedback_message_input_1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="3"
+                                            android:hint="@string/output_label"
+                                            android:textSize="16dp" />
+
+                                        <Spinner
+                                            android:id="@+id/feedback_message_type_1"
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:entries="@array/feedback_message_type">
+                                        </Spinner>
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/feedback_message_add_button_1"
+                                        style="@style/ButtonStyle"
+                                        android:layout_width="100dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="right"
+                                        android:text="@string/add"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+
+
+                                <!--<EditText-->
+                                    <!--android:id="@+id/feecback_message_desc_1"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:textSize="16dp"-->
+                                    <!--android:inputType="textMultiLine"-->
+                                    <!--android:background="@drawable/stage_zone"-->
+                                    <!--android:padding="10dp"-->
+                                    <!--android:layout_marginTop="10dp"-->
+                                    <!--android:layout_marginBottom="10dp"-->
+                                    <!--android:visibility="gone"-->
+                                    <!--android:hint="Input the message's description" />-->
+                            </LinearLayout>
+                            <!--feedback end-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/stage_select_location_module_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:visibility="gone">
+
+                            <RadioGroup
+                                android:id="@+id/location_strategy_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <RadioButton
+                                    android:id="@+id/end_location_no_requirement_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="@string/location_no_requirement"
+                                    android:textSize="16dp" />
+
+                                <RadioButton
+                                    android:id="@+id/requester_location_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/location_request_location"
+                                    android:textSize="16dp" />
+
+                                <RadioButton
+                                    android:id="@+id/other_location_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/location_request_select"
+                                    android:textSize="16dp" />
+                            </RadioGroup>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dash_line"
+                                android:layerType="software"></View>
+
+                            <!--add input start-->
+                            <CheckBox
+                                android:id="@+id/need_label_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_input" />
+                            <LinearLayout
+                                android:id="@+id/need_label_ll_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/add_input_label_text_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="6"
+                                        android:hint="@string/add_input_hint"
+                                        android:textSize="16dp" />
+
+                                    <Button
+                                        android:id="@+id/add_input_label_button_2"
+                                        style="@style/ButtonStyle"
+                                        android:layout_width="50dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="@string/add"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                                <com.lab.se.crowdframe.entity.TagCloudLayout
+                                    android:id="@+id/add_input_label_show_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></com.lab.se.crowdframe.entity.TagCloudLayout>
+
+                            </LinearLayout>
+                            <!--add input end-->
+
+                            <!--feedback start-->
+                            <CheckBox
+                                android:id="@+id/need_feedback_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stage_feedback" />
+                            <LinearLayout
+                                android:id="@+id/feedback_ll_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="30dp"
+                                android:visibility="gone">
+
+                                <CheckBox
+                                    android:id="@+id/feedback_pic_checkbox__2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/feedback_picture" />
+
+                                <EditText
+                                    android:id="@+id/feedback_pic_desc_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16dp"
+                                    android:inputType="textMultiLine"
+                                    android:background="@drawable/stage_zone"
+                                    android:padding="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:visibility="gone"
+                                    android:hint="@string/picture_hint" />
+
+                                <CheckBox
+                                    android:id="@+id/feedback_message_checkbox_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/feedback_message" />
+
+                                <LinearLayout
+                                    android:id="@+id/feedback_message_area_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/feedback_message_input_2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="3"
+                                            android:hint="@string/output_label"
+                                            android:textSize="16dp" />
+
+                                        <Spinner
+                                            android:id="@+id/feedback_message_type_2"
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:entries="@array/feedback_message_type">
+                                        </Spinner>
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/feedback_message_add_button_2"
+                                        style="@style/ButtonStyle"
+                                        android:layout_width="100dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="right"
+                                        android:text="@string/add"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--feedback end-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/stage_select_location_group"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/start_location_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/left_radio_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="@string/edit_stage_start_location"
+                            android:textColor="@color/radio_text_color_selector"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/end_location_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/right_radio_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="@string/edit_stage_end_location"
+                            android:textColor="@color/radio_text_color_selector"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+
+                </FrameLayout>
+                <!--location stragy end-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/stage_finish_button"
+                        style="@style/ButtonStyle5"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:text="@string/finish"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

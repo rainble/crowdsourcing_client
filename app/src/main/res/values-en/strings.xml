@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Strings related to login page-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="user_name_not_exist">User Name is not exist!</string>
+    <string name="wrong_password">Password is wrong!</string>
+    <string name="internal_server_error">Internal server error, please try again later.</string>
+    <string name="register_successfully">Register successfully!</string>
+    <string name="user_name_exist">User Name already exists, please change other one.</string>
+
+    <string name="app_name">CrowdFrame</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="title_search">Search</string>
+    <string name="title_publish">Publish</string>
+    <string name="title_template">Template</string>
+    <string name="title_my_task">MyTask</string>
+    <string name="title_activity_search_task">Search Result</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search">Select Location</string>
+    <string name="title_activity_edit_temp">Edit Your Template</string>
+    <string name="title_activity_edit_stage">Edit Stage</string>
+    <string name="title_activity_set_task">Customize Your Task</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ongoing_accepted_task">Ongoing Accepted Tasks</string>
+    <string name="title_activity_task_list">Task List</string>
+    <string name="title_activity_search_temp">Search Result</string>
+    <string name="title_activity_check_map">Check Map</string>
+    <string name="title_activity_customize_stage">Customize Your Stage</string>
+    <string name="title_activity_accept_ongoing_task">AcceptOngoingTaskActivity</string>
+
+    <!--Strings related to mypage-->
+    <string name="user_name">User Name:</string>
+    <string name="user_credit">User Credit:</string>
+    <string name="accepted_task">Accepted Task</string>
+    <string name="accepted_ongoing">Ongoing</string>
+    <string name="accepted_history">History</string>
+    <string name="published_task">Published Task</string>
+    <string name="published_ongoing">Ongoing</string>
+    <string name="published_history">History</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change password</string>
+    <string name="change_tag">Change tag</string>
+    <string name="change_language">Change language</string>
+
+    <string name="change_password_success">change password successfully!</string>
+    <string name="change_password_failed">change password failed!</string>
+    <string name="change_password_no_need">no need to change password= =</string>
+    <string name="input_new_password">input new password</string>
+    <string name="input_new_password_again">input new password again</string>
+
+    <string name="change_tag_success">change user tag successfully!</string>
+    <string name="change_tag_failed">change user tag failed!</string>
+    <string name="change_tag_no_need">no need to change the user tag= =</string>
+    <string name="other_user">not software engineer lab</string>
+    <string name="software_user">software engineer lab</string>
+
+    <string name="instruction">Instructions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share_app">Share this app</string>
+
+    <string name="abort_task">Abort Task</string>
+    <string name="abort_task_detail_1">If you abort this task, you will lose</string>
+    <string name="abort_task_detail_2">credit score as punishment, are you sure to abort?</string>
+
+    <!--Strings related to template page-->
+    <string name="template_prompt">Enter template name...</string>
+    <string name="noresult_prompt">No search result!</string>
+    <string name="collect">Collect</string>
+    <string name="edit_template_title">Title:</string>
+    <string name="edit_template_desc">Desc:</string>
+    <string name="add_stage">Add a New Stage</string>
+    <string name="edit_stage_hint">Please input this stage\'s description(Required)...</string>
+    <string name="edit_stage_worker_strategy">Worker Strategy</string>
+    <string name="worker_strategy_same">Same as the last stage\'s worker.</string>
+    <string name="worker_strategy_new">Different from all previous workers.</string>
+    <string name="worker_strategy_no">No requirement.</string>
+    <string name="allow_multiple_worker">Allow multiple workers.</string>
+    <string name="edit_stage_worker_number">Number:</string>
+    <string name="edit_stage_result">Result:</string>
+    <string name="result_first">select the first finished</string>
+    <string name="result_most">select the most workers\' answer</string>
+    <string name="result_select">user choose freely</string>
+    <string name="edit_stage_start_location">Start Location</string>
+    <string name="edit_stage_end_location">End Location</string>
+    <string name="location_no_requirement">No requirement</string>
+    <string name="location_request_location">Requester\'s location</string>
+    <string name="location_request_select">Requester select one</string>
+    <string name="add_input">Add extra information</string>
+    <string name="add_input_hint">Input your label……</string>
+    <string name="add">add</string>
+    <string name="stage_feedback">Stage feedback</string>
+    <string name="feedback_picture">Picture</string>
+    <string name="picture_hint">Input the picture\'s description</string>
+    <string name="feedback_message">Message</string>
+    <string name="output_label">Add output label</string>
+    <string name="finish">Finish</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_edit_template">Are you sure to give up the current template edition?</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="default_stage_desc">This is the default stage. You can set its content and add more stages if needed.</string>
+    <string name="new_stage_desc">This is a new stage. You can set the content by clicking the setting icon.</string>
+    <string name="add_stage_successful">A new stage was successfully added!</string>
+    <string name="confirm_finish">Do you have finished this template?</string>
+    <string name="confirm_delete">Are you sure to delete this stage?</string>
+    <string name="confirm_edit_stage">Are you sure to give up the current edition?</string>
+    <string name="confirm_stage_finish">Do you have finished this stage?</string>
+    <string name="confirm_delete_tag">Are you sure to delete this tag?</string>
+
+    <!--Strings related to publish page-->
+    <string name="select_type">Select Template</string>
+    <string name="publish_hint">(Swipe to refresh and long press to delete)</string>
+    <string name="no_collected_temp">You have not collected any templates yet.</string>
+    <string name="task_overview">Task Overview</string>
+    <string name="task_title">Title:</string>
+    <string name="task_desc">Description:</string>
+    <string name="task_range">Worker Range：</string>
+    <string name="task_bonus">Bonus:</string>
+    <string name="task_ddl">Deadline:</string>
+    <string name="prompt_stages">Stages</string>
+    <string name="stage_input">Stage Input</string>
+    <string name="stage_desc">Description:</string>
+    <string name="stage_reward">Reward:</string>
+    <string name="stage_end_location">End Location(Required):</string>
+    <string name="stage_detail_address">Detail Address(Optional):</string>
+    <string name="end_duration">End Location Duration(in minutes):</string>
+    <string name="stage_ddl">Deadline:</string>
+    <string name="stage_attribute">Stage Attribute</string>
+    <string name="stage_worker_strategy">Worker Strategy:</string>
+    <string name="stage_worker_number">Worker Number:</string>
+    <string name="stage_result">Result:</string>
+    <string name="stage_output">Stage Output:</string>
+
+    <!--Strings related to the user guide-->
+    <string name="first_title">First</string>
+    <string name="first_content">This is the template page. You first need to collect one template and then you can use it to publish a task.Also, you can create your own template by clicking the \'plus\' icon.</string>
+    <string name="second_title">Second</string>
+    <string name="second_content">This is the publish page. You first click the template title and then you fill the task info.At last, you can publish it.</string>
+    <string name="third_title">Third</string>
+    <string name="third_content">This is the task browsing page. You can see the task detail information by clicking the icon in the map.And you can accept a task by clicking the \'accept\' button. Notice: You can\'t see the task you publish.</string>
+    <string name="last_title">Last</string>
+    <string name="last_content">This is your personal page. You can find the task you have accepted and then finish it. Also,you can see the progress of tasks you have published.</string>
+
+    <!--Strings related to the search task page-->
+    <string name="accept_task">accept</string>
+    <string name="cancel">cancel</string>
+    <string name="guide_button">Got it</string>
+    <string name="create_template_successfully">"Create the template successfully! "</string>
+    <string name="template_update">List updated!</string>
+    <string name="template_release_time">Release time of the template</string>
+    <string name="number_of_stages">Number of stages in this template</string>
+    <string name="template_heat">The heat of the template</string>
+    <string name="confirm_collect_template">Are you sure you want to collect this template?</string>
+    <string name="collect_template_successfully">Collection succeeded! Browse the Publish page to find more.</string>
+    <string name="collect_template_fail">Collection failed! Please try again.</string>
+    <string name="template_overview_desc">"Description: "</string>
+    <string name="template_overview_stage">"Stage: "</string>
+    <string name="template_overview_stage_desc">"Stage desc: "</string>
+    <string name="template_overview_stage_worker_strategy">Worker Strategy</string>
+    <string name="template_overview_stage_multiworker">Multi worker</string>
+    <string name="template_stage_allow_multiple_worker">allowed</string>
+    <string name="template_stage_not_allow_multiple_worker">not allowed</string>
+    <string name="template_overview_worker_number_limit">"Worker number limit: "</string>
+    <string name="template_overview_stage_aggregate_method">"Aggregate method: "</string>
+    <string name="start_location_strategy">Start location strategy:</string>
+    <string name="start_location_inputs">Start inputs:</string>
+    <string name="start_picture_output">"Start picture output: "</string>
+    <string name="start_other_output">Other start output:</string>
+    <string name="end_location_strategy">"End location Strategy: "</string>
+    <string name="end_location_inputs">"Destination inputs: "</string>
+    <string name="end_picture_output">Destination picture output</string>
+    <string name="end_other_output">"Other destination output: "</string>
+    <string name="confirm_delete_template">Are you sure to delete the saved template?</string>
+    <string name="cancel_collection_successfully">Cancel collection successfully! You can collect it again in the template page later.</string>
+    <string name="cancel_collection_fail">Cancel collection fail! Please try again!.</string>
+    <string name="not_enough_credit">Sorry, you do not have enough credits.</string>
+    <string name="premature_ddl">You have set up a premature deadline. Please check.</string>
+    <string name="wrong_stage_ddl">Wrong stage deadline. Please check.</string>
+    <string name="confirm_publish">Are you sure to post the task?</string>
+    <string name="stages_remain_unmodified">Some of the stages remain unmodifie. Please click the edit icon in the right of each stage to set the corresponding content!</string>
+    <string name="input_title">Please input the title information!</string>
+    <string name="publish_task_successfully">You have successfully published the task!</string>
+    <string name="publish_task_fail">Publish error, please try again later.</string>
+    <string name="input_desc">Please input the description information!</string>
+    <string name="accept_successfully">Apply for this task successfully! One message will be sent to tell you the result in about 30 seconds!</string>
+    <string name="accept_fail">Accept ongoingTask failed.</string>
+    <string name="detail_worker_num">Worker Num:</string>
+    <string name="contract">Contract:</string>
+    <string name="detail_worker">Worker:</string>
+    <string name="detail_address">"detail address: "</string>
+    <string name="feedback_text">"# feedback some text: "</string>
+    <string name="feedback_number">"# feedback one number: "</string>
+    <string name="feedback_enum">"# select one option: "</string>
+    <string name="confirm_accept">Are you sure to accept this task and complete it before the contract time? You can click to modify the contract, but it cannot later than the deadline.</string>
+    <string name="need_to_fill_feedback">You need to fill the feedback!</string>
+    <string name="deny_permission">You denied the permission！</string>
+    <string name="progress">Progress:</string>
+    <string name="task_detail_desc">Description:</string>
+    <string name="contract_time">Contract Time:</string>
+    <string name="feedback">Feedback</string>
+    <string name="task_detail">Detail</string>
+    <string name="select_location">Select Location</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="current_stage">Current Stage:</string>
+    <string name="accept_ongoing_task_title">Task title:</string>
+    <string name="accept_stage_reward">Stage reward:</string>
+    <string name="check_in_map">Check in map</string>
+    <string name="take_photo">take photo</string>
+    <string name="select_photo">select photo</string>
+    <string name="abort">Abort Task</string>
+    <string name="no_related_task">No related task now.</string>
+    <string name="ongoing_task">Ongoing task</string>
+    <string name="confirm_logout">Are you sure to logout?</string>
+    <string name="register_hint_string">No account yet? Register</string>
+    <string name="login_hint_string">Already a member? Login</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="warn">Warn</string>
+    <string name="warn_left_stage">To create a template, you must set all the stage content in the template. Some stages are not set. Please check before you can publish this template!</string>
+    <string name="remind_select_location">You need to choose one location.</string>
+    <string name="stage_status">Status:</string>
+    <string name="publish_time">Publish Time:</string>
+    <string name="stage_desc_four">Description:</string>
+    <string name="finish_time">Finish Time:</string>
+    <string name="task_progress">Task Progress:</string>
+    <string name="expired">Expired</string>
+    <string name="finished">Finished, check pending</string>
+    <string name="credit_given">Got credit reward</string>
+    <string name="give_credit">Give credit</string>
+    <string name="confirm_give_credit">Are you sure to give the credit?</string>
+    <string name="give_credit_success">Give credit successfully!</string>
+    <string name="give_credit_error">Failed to give credit!</string>
+    <string name="accept_task_successfully">"You have successfully accepted the task "</string>
+    <string name="accept_task_fail">"Fail to accept the task "</string>
+    <string name="accept_task_successfully_desc1">"You should before "</string>
+    <string name="accept_task_successfully_desc2">" complete the task: "</string>
+    <string name="published_task_completed">The progress of your published task has been updated!</string>
+    <string name="published_task_completed_desc1">"Your published task "</string>
+    <string name="published_task_completed_desc2">" has been completed by "</string>
+    <string name="published_task_completed_desc3">" at "</string>
+    <string name="published_task_completed_desc4">\"\"</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="update">Software Update</string>
+    <string name="update_message">Please update to the latest version!</string>
+    <string name="update_button">Update</string>
+    <string name="already_completed">Someone has completed this task before you!</string>
+
+    <string name="task_published">New task.</string>
+    <string name="task_published_desc1">"User: "</string>
+    <string name="task_published_desc2">"has published a new task: "</string>
+    <string name="task_published_desc3">\".The total reward is: \"</string>
+    <string name="task_published_desc4">\".The task deadline is: \"</string>
+
+    <!--alert dialog-->
+    <string name="dialog_update">update</string>
+    <string name="register_username_error">User name should be at least 1 character!</string>
+    <string name="register_password_tooshort">Password should consist of at least 5 alphanumeric characters!</string>
+    <string name="register_password_notmatch">Password does not match!</string>
+
+    <string name="requester_abort_task">Are ou sure to abort this task?</string>
+    <string name="cancel_task_success">Cancel task successfully!</string>
+    <string name="cannot_cancel_task">Task has been accepted, cannot cancel it!</string>
+    <string name="cancel_task_error">Failed to cancel the task!</string>
+    <string name="requester_give_credit">Credit reward given</string>
+    <string name="task_detail_bonus">bonus:</string>
+    <string name="task_detail_totalReward">TotalReward:</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="register_phone_not_correct">Wrong phone number format!</string>
+
+    <string name="change_contract">modify contract time</string>
+    <string name="wrong_contract">Contract time should earlier than the deadline!</string>
+    <string name="has_worker">Accepters：</string>
+    <string name="updateResult">Update Result</string>
+    <string name="update_fail">Update fail, please try again later!</string>
+</resources>

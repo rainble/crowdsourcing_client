@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lab.se.crowdframe.SearchTaskFragment">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/current_address"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="8"/>
+
+        <Button
+            android:id="@+id/select_location"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp"
+            android:text="@string/select_location" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/task_card_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/card_shape"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stage_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textColor="@color/button_nomal"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/requester_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="Wenhai Li"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="Fetch my delivery"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="1">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/edit_template_desc"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/task_card_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:lines="3"
+                        android:ellipsize="end"
+                        android:text="Want someone to fetch my delivery from AKang to Software Building."
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"/>
+                </TableRow>
+
+                <Button
+                    android:id="@+id/task_detail"
+                    android:layout_width="wrap_content"
+                    style="@style/ButtonStyle"
+                    android:textSize="15dp"
+                    android:text="@string/task_detail"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"/>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

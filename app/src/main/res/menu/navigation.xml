@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/vector_drawable_search"
+        android:title="@string/title_search" />
+
+    <item
+        android:id="@+id/navigation_publish"
+        android:icon="@drawable/vector_drawable_publish"
+        android:title="@string/title_publish" />
+
+    <item
+        android:id="@+id/navigation_template"
+        android:icon="@drawable/vector_drawable_edit"
+        android:title="@string/title_template" />
+
+    <item
+        android:id="@+id/navigation_my_task"
+        android:icon="@drawable/vector_drawable_people"
+        android:title="@string/title_my_task" />
+
+</menu>

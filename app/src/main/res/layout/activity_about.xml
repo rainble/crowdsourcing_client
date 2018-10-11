@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F3F6"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <LinearLayout
+                    android:id="@+id/instruction"
+                    style="@style/top_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/instruction" />
+                </LinearLayout>
+
+                <View style="@style/bg_line"/>
+
+                <!-- 无圆角-->
+                <LinearLayout
+                    android:id="@+id/privacy_policy"
+                    style="@style/mid_layout">
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/privacy_policy" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+
+                <!-- 下圆角-->
+                <LinearLayout
+                    android:id="@+id/share_app"
+                    style="@style/bottom_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/share_app" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

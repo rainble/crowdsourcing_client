@@ -1,0 +1,263 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lab.se.crowdframe.MyTaskFragment">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/user_login_gift"
+            android:visibility="gone"
+            app:backgroundTint="#fff"
+            app:borderWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_login_gift"
+            app:elevation="8dp"
+            app:pressedTranslationZ="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F3F6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/user_info_ll"
+                    style="@style/single_layout"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/user_icon4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/usertext"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/user_name" />
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                style="@style/usertext"
+                                android:gravity="center_vertical"
+                                android:text="Wenhai Li" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/usertext"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/user_credit" />
+
+                            <TextView
+                                android:id="@+id/user_credit"
+                                style="@style/usertext"
+                                android:gravity="center_vertical"
+                                android:text="100" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/accepted_task"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <LinearLayout
+                    android:id="@+id/my_task_accept_ongoing"
+                    style="@style/top_layout">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/my_task_ongoing" />
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/accepted_ongoing" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+                <!-- 分割线 -->
+                <!--<View style="@style/bg_line"/>-->
+                <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+                <!--<LinearLayout style="@style/mid_layout">-->
+                <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/my_task_history_task"-->
+                <!--android:layout_marginRight="10dp"/>-->
+                <!--<TextView style="@style/usertext" android:text="History Tasks" />-->
+                <!--<ImageView style="@style/img_arrow"/>-->
+                <!--</LinearLayout>-->
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <LinearLayout
+                    android:id="@+id/my_task_accept_history"
+                    style="@style/bottom_layout">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/my_task_history" />
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/accepted_history" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/published_task"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <LinearLayout
+                    android:id="@+id/my_task_publish_ongoing"
+                    style="@style/top_layout">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/my_task_idea" />
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/published_ongoing" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <LinearLayout
+                    android:id="@+id/my_task_publish_history"
+                    style="@style/bottom_layout">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/my_task_history_task" />
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/published_history" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <LinearLayout
+                    android:id="@+id/logout"
+                    style="@style/top_layout">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/setting"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/usertext"
+                        android:text="@string/logout" />
+
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <LinearLayout
+                    android:id="@+id/about"
+                    style="@style/bottom_layout">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/about" />
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="@string/about" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"></View>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
